@@ -1,2 +1,8 @@
-# adso3564995
-Lorem ipsum dolor sit amet.
+# ADSO 3564995
+![Profile Picture](src/images/profile.webp) \\
+## Oscar Fernando Aristizábal Cardona
+### Análisis y Desarrollo de Software
+***Centro de Procesos Industriales y Construcción***
+---
+
+
