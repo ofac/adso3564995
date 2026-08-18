@@ -9,7 +9,7 @@
 |--- |---        |---                                   |
 |01. |Emmet      |Workflow - Markup & Styling           |
 |02. |HTML       |Structure - Hypertext Markup Language |
-|03. |CSS        |Look & Feel - Cascading Style Sheet   |
+|03. |CSS        |Look & Feel - Cascading Style Sheets  |
 |04. |Javascript |Behavior - Programing Language        |
 
 ---
