@@ -21,6 +21,9 @@ body {
                 img {
                     border: 4px solid #f9966baa;
                 }
+                h3 {
+                    font-weight: 300;
+                }
             }
            menu.mmenu {
                 a:is(:link, :visited) {
@@ -120,6 +123,11 @@ body {
         top: 6px;
         transition: all 0.4s ease-in;
         width: 40px;
+        a:is(:link, :visited) {   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &:hover {
             opacity: .9;
             transform: scale(1.1);
@@ -139,7 +147,13 @@ body {
 
         header.mmenu {
             text-align: center;
-
+            &.internal {
+                h1 { font-size: 2rem; }
+                img {
+                    height: 80px;
+                    width: 80px;
+                 }
+            }
             h1 {
                 font-size: 3rem;
                 font-weight: 200;
@@ -181,7 +195,17 @@ body {
             border-radius: 8px;
             padding: 0.6rem;
             margin: 1rem auto;
+            min-height: 240px;
             width: 360px;
+            h3.subtitle {
+                font-weight: 500;
+                padding-bottom: 0.2rem;
+                border-bottom: 2px dotted #fff9;
+            }
+            p {
+                color: #fff9;
+                text-align: justify;
+            }
         }
 
         menu.mmenu {
