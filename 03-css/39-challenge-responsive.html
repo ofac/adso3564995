@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39-Challenge Responsive</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+        * {
+            transition: all 0.4s 0.2s ease;
+        }
+        body {
+            background: #000 url(imgs/responsive/bg.jpeg) no-repeat center top / cover;
+            background-attachment: fixed;
+            font-family: Poppins, sans-serif;
+
+            main {
+                border-radius: 12px;
+                corner-shape: squircle;
+                min-height: 100dvh;
+
+                img.logo {
+                    /* width: 480px; */
+                    display: block;
+                    margin: 1rem auto;
+                    animation: 8s animLogo infinite ease;
+                }
+
+                section.characters {
+                    margin: 4rem auto;
+                    width: 1440px;
+
+                    figure.character {
+                        outline: 2px solid #000;
+                        border-radius: 12px;
+                        corner-shape: squircle;
+                        display: inline-block;
+                        height: 260px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: relative;
+                        margin: 0 0.5rem;
+                        transition: all 0.4s ease;
+                        width: 340px;
+                        
+                        &.character01 {
+                            background: #000a url(imgs/responsive/character01.webp) no-repeat center top / 140%;
+                        }
+                        &.character02 {
+                            background: #000a url(imgs/responsive/character02.webp) no-repeat center top / 140%;
+                        }
+                        &.character03 {
+                            background: #000a url(imgs/responsive/character03.webp) no-repeat center top / 140%;
+                        }
+                        &.character04 {
+                            background: #000a url(imgs/responsive/character04.webp) no-repeat center top / 140%;
+                        }
+                        &:hover {
+                            outline: 2px solid #9ee362;
+                            background-size: 180%;
+                            
+                            
+                            figcaption {
+                                color: #9ee362;
+                                bottom: -1rem;
+                            }
+                        }
+
+                        figcaption {
+                            background-color: #000b;
+                            color: #fff;
+                            border-top: 4px solid #000;
+                            position: absolute;
+                            bottom: -4.8rem;
+                            margin: 0;
+                            backdrop-filter: blur(4px);
+                            padding: 1rem 1rem 2rem 1rem;
+                            transition: all 0.4s 0.2s ease-out;
+                            width: 96%;
+
+                            span {
+                                font-size: 1.4rem;
+                                display: block;
+                            }
+                            small {
+                                font-size: 0.8rem;
+                                color: #fff9;
+                            }
+
+                        }
+                    }
+                }
+
+                section.main-characters {
+                    article {
+                        outline: 2px solid #000;
+                        background: #000a;
+                        border-radius: 12px;
+                        color: #fff;
+                        corner-shape: squircle;
+                        padding: 1rem;
+                        margin: 2rem auto;
+                        width: 1388px;
+
+                        img, aside {
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+
+                        img {
+                            object-fit: contain;
+                            height: 340px;
+                            margin-right: 2rem ;
+                            width: 340px;
+                        }
+
+                        aside {
+                            width: 1000px;
+
+                            h2 {
+                                color: #fff;
+                                font-size: 2rem;
+                                font-weight: 400;
+                                margin-top: 0;
+                            }
+
+                            p {
+                                text-align: justify;
+                                font-weight: 200;
+                                line-height: 2rem;
+                            }
+
+                        }
+
+                        &:hover {
+                             background: #000c;
+                             outline: 2px solid #9ee362;
+                             backdrop-filter: blur(4px);
+
+                             img {
+                                transform: translateX(1.2rem);
+                             }
+
+                             aside {
+                                h2 {
+                                    color: #9ee362;
+                                }
+                             }
+                        }
+                    }
+                }
+            }
+        }
+        @keyframes animLogo {
+            0%, 100% {
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                transform: scale(1.1) translateY(-20px);
+            }
+        }
+
+        @media (max-width: 1470px) {
+                body {
+                    main {
+                         section.characters {
+                            width: 718px;
+
+                            figure.character {
+                                margin-bottom: 1rem;
+                            }
+                         }
+                         section.main-characters {
+                            article {
+                                width: 670px;
+
+                                img {
+                                    margin-right: 1rem;
+                                    width: 200px;
+
+                                }
+                                aside {
+                                    width: 440px;
+
+                                    p {
+                                        line-height: 1.6rem;
+                                    }
+                                }
+                            }
+                         }
+                    }
+                }
+        }
+        @media (max-width: 746px) {
+                body {
+                    main {
+                        img.logo {
+                            width: 380px;
+                        }
+                         section.characters {
+                            width: 400px;
+
+                            figure.character {
+                                width: 400px;
+                                margin: 0.5rem auto;
+                            }
+                         }
+                         section.main-characters {
+                            article {
+                                width: 370px;
+
+                                img {
+                                    margin-right: 1rem;
+                                    display: block;
+                                    width: 200px;
+                                    margin: 0 auto;
+
+                                }
+                                aside {
+                                    display: block;
+                                    width: 370px;
+                                }
+                            }
+                         }
+                    }
+                }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img class="logo" src="imgs/responsive/logo.webp" alt="Logo">
+        <section class="characters">
+            <figure class="character character01">
+                <figcaption>
+                <span>Link</span>
+                <small>The legendary chosen hero wielding the Master Sword to banish ultimate darkness.</small>
+                </figcaption>
+            </figure>
+            <figure class="character character02">
+                <figcaption>
+                <span>Zelda</span> 
+                <small>The wise mortal reincarnation of Goddess Hylia and princess of Hyrule kingdom.</small>
+                </figcaption>
+            </figure>
+            <figure class="character character03">
+                <figcaption>
+                <span>Ganondorf</span> 
+                <small>The wicked king of the Gerudo who seeks the entire golden Triforce.</small>
+                </figcaption>
+            </figure>
+            <figure class="character character04">
+                <figcaption>
+                <span>Darunia</span> 
+                <small>The fierce and loyal boss of the Gorons became Sage of Fire.</small>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="main-characters">
+            <article>
+                <img src="imgs/responsive/side01.webp" alt="Lorem">
+                <aside>
+                    <h2>Explore Hyrule</h2>
+                    <p>
+                        At the heart of this majestic kingdom lies Hyrule Field, a vast grassland that leads to diverse locations: bustling settlements, an awe-inspiring volcano, a picturesque lake, an unforgiving desert, and other interesting spots. To cover long distances on foot, you can make use of the new dash ability. 
+                        <br><br>
+                        Furthermore, with the simple press of a button, you will be able to clear gaps and obstacles. You will even befriend a faithful mare, whom you can ride once you have progressed in your adventure.
+                    </p>
+                </aside>
+            </article>
+            <article>
+                <img src="imgs/responsive/side02.webp" alt="Lorem">
+                <aside>
+                    <h2>Wisdom is the key</h2>
+                    <p>
+                        Thoroughly explore every corner of the kingdom and lend a hand to the inhabitants with their troubles, as your goodwill will be rewarded. No matter where you are, time will pass without pause. After sunset, you might encounter new faces... and enemies. 
+                        <br><br>
+                        If you are ever unsure of where to go, take a look at the chronology to review past events, check your objectives, and marvel at a tapestry that recounts Link's journey.
+                    </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
